@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>一小片花园 · Little Garden</title><meta name="description" content="一座可以亲手种植、转动欣赏的桌面 3D 小花园。"><link rel="stylesheet" href="style.css"></head><body>
+<div id="scene" aria-label="可以拖动旋转的三维花园"></div>
+<header><a class="brand" href="./">✳ <span>LITTLE GARDEN</span></a><button id="night" aria-pressed="false">☾ 切换夜晚</button></header>
+<main><p class="eyebrow">A SMALL SPACE TO SLOW DOWN</p><h1>留一点时间，<br>让花慢慢开。</h1><p class="intro">选一朵花，点一下泥土。<br>把平凡的一天，种成喜欢的模样。</p><div class="count"><span id="count">0</span> / 24 <small>朵小小的快乐</small></div></main>
+<div class="hint" id="status" role="status" aria-live="polite">拖动画面转动花园 · 点击泥土种花</div>
+<aside aria-label="园艺工具"><div class="tools"><button class="seed active" data-type="daisy" aria-pressed="true"><i class="dot cream">✿</i><span>小雏菊</span></button><button class="seed" data-type="poppy" aria-pressed="false"><i class="dot coral">✿</i><span>虞美人</span></button><button class="seed" data-type="lavender" aria-pressed="false"><i class="dot lilac">❋</i><span>薰衣草</span></button><span class="divider"></span><button id="undo">↶<span>撤回</span></button><button id="reset">⟳<span>重新种</span></button></div><p>你的花园会自动保存在这台设备上</p></aside>
+<footer><span>GROW AT YOUR OWN PACE.</span><span>拖动旋转 / 滚轮缩放 / 双指缩放</span></footer><div id="error" hidden>3D 场景暂时无法启动，请尝试支持 WebGL 的浏览器并开启硬件加速。</div><script type="module" src="app.js"></script></body></html>
