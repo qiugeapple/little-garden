@@ -1,0 +1,13 @@
+{
+  "name": "little-garden",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A Blender-based interactive windowsill garden built with Three.js.",
+  "scripts": {
+    "start": "node server.cjs",
+    "build": "node scripts/build-site.mjs",
+    "test": "node reward-flow.test.mjs && node tests/plant-growth.test.mjs && node scripts/check-assets.mjs"
+  },
+  "engines": { "node": ">=18" }
+}

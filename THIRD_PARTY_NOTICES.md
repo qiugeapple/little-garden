@@ -1,19 +1,11 @@
 # Third-party notices
 
-## Three.js
+## Three.js r170
 
-Version: r170 / npm package 0.170.0.
-
+Three.js 0.170.0 and its GLTFLoader, RoomEnvironment and BufferGeometryUtils modules are bundled in `vendor/`.
 Source: https://github.com/mrdoob/three.js/tree/r170
+Copyright 2010–2024 Three.js Authors. MIT License: `vendor/THREE-LICENSE.txt`.
 
-Bundled file: `vendor/three.module.js`.
+## Project assets
 
-Copyright 2010-2024 Three.js Authors. Distributed under the MIT License; see `vendor/THREE-LICENSE.txt`.
-
-## Noto Serif SC
-
-The stylesheet optionally requests Noto Serif SC from Google Fonts. Font binaries are not included in this repository.
-
-Source: https://fonts.google.com/noto/specimen/Noto+Serif+SC
-
-The interface provides local serif font fallbacks.
+Blender models, raster materials, pixel-pet graphics and synthesized audio were prepared for this project with substantial AI assistance. No commercial music recording is bundled. Reference artwork is not distributed as a runtime asset. Original code and assets have no additional open-source licence assigned.

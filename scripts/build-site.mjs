@@ -1,0 +1,11 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+export const runtimeFiles=['index.html','style.css','app.js','garden-effects.js','garden-life.js','garden-reward.js','garden-cottage.js','plant-growth.js','cloud-mist.js'];
+const out=path.join(root,'_site');
+await fs.mkdir(out,{recursive:true});
+for(const name of runtimeFiles)await fs.copyFile(path.join(root,name),path.join(out,name));
+for(const name of ['vendor','assets'])await fs.cp(path.join(root,name),path.join(out,name),{recursive:true,filter:src=>!src.endsWith('.gz')});
+await fs.writeFile(path.join(out,'.nojekyll'),'');
+console.log('Built static website in _site/. Source archives, tests and documentation are excluded.');
