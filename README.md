@@ -45,10 +45,9 @@ The static website is emitted to `_site/`. Deploy that folder. The included GitH
 
 The GLBs are bundled locally. Initial loading still depends on connection speed and GPU performance; Blender rendering and browser rendering are visually different. Gzip companions support the local server; standard GLBs remain for static hosts.
 
-## Portfolio
+## view
 
-[Web experience in Figma](https://www.figma.com/design/cjCqxD4qbJ1GFQF68zbF2G/?node-id=553-1531) · [Blender modelling page](https://www.figma.com/design/cjCqxD4qbJ1GFQF68zbF2G/?node-id=598-2238)
-
+https://qiugeapple.github.io/little-garden/
 ![Web prototype](docs/images/web-mist.png)
 
 ![Six Blender flower studies](docs/images/model-six-flowers.png)
